@@ -1,0 +1,61 @@
+.navigation{
+    position: fixed;
+    display:flex;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    background-color:  #101820;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.logo{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 650px;
+}
+.label{
+    color: #eaeaea;
+    font-size: 20px;
+    font-family: helvetica;
+    font-weight: bolder;
+    margin-right: 50px
+}
+.menus{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.call-button{
+    width: 175px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #0042ce;
+    color: #eaeaea;
+    margin-top: 15px;
+    transition: background-color 200ms linear;
+
+}
+.call-button:hover{
+    background-color: #89e6d9;
+    cursor: pointer;
+}
+.button-label{
+    color: #eaeaea;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    padding-left: 20px;
+}
+
+.green-hover{
+    transition: color 300ms linear;
+}
+.green-hover:hover{
+    cursor:pointer;
+    color: rgb(121, 206, 172);
+}
+
