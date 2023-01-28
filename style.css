@@ -92,6 +92,49 @@
     transition: color 300ms linear;
     margin-bottom: 20px;
 }
+.header-hero{
+    display: flex;
+    justify-content: center;
+    background-color: #101820;
+    color: #eaeaea;
+    align-items:center;
+    position: static;
+    top: 300px;
+    height: 1000px;
+}
+.container{
+    padding-top: 300px;
+    padding-right: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    top:0px;
+    right: 0px;
+    position: sticky;
+    width: 850px;
+}
+.hero-title{    	
+    font-size: 30px;
+    font-family: helvetica;
+    font-weight: bolder;
+    left:220px;
+    position: relative;
+}
+.hero-title:valid{
+    left: 220px;
+    transition: left 1000ms ease-in-out;
+
+}
+.hero-content{
+    font-size: 50px;
+    font-family: serif;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    left: 220px;
+    position: relative;
+    transition: bottom 700ms ease-in-out
+}
+
 .footer > .logo{
     display: flex;
     margin-right: 100px;
