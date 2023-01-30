@@ -9,6 +9,9 @@
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 30px;
+    z-index: 5;
+    max-height: 100px;
+    overflow: visible;
 }
 body{
     background-color: #101820;
@@ -24,7 +27,13 @@ body{
     font-size: 20px;
     font-family: helvetica;
     font-weight: bolder;
-    margin-right: 50px
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top-color: #eaeaea;
+    opacity: 1;
+
 }
 .menus{
     display: flex;
@@ -56,11 +65,12 @@ body{
 }
 
 .green-hover{
-    transition: color 300ms linear;
+    transition: color   300ms linear;
 }
 .green-hover:hover{
     cursor:pointer;
     color: rgb(121, 206, 172);
+    border-top-color: #89e6d9;
 }
 .light-green-hover:hover{
     cursor: pointer;
@@ -298,7 +308,8 @@ footer{
     height: 1400px;
 }
 .features-picture > img{
-    top: 0;
+    top: 140px;
+    transform: scale(0.75);
     left: 0;
     position: sticky;
 }
@@ -355,7 +366,7 @@ footer{
     align-self: center;
     flex-direction: row;
     width: 2000px;
-    overflow: scroll;
+    overflow-x: auto;
     margin-left: 500px;
 }
 .see-our-work{
@@ -374,6 +385,21 @@ footer{
     flex-direction: column;
     padding-right: 50px;
 }
+.triangle{
+    height: 15px;
+    width: 15px;
+    border: 10px solid transparent;
+    border-top-color: inherit;
+    box-sizing:border-box;
+    transition: border-top-color 300ms linear;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    overflow-x: visible;
+    opacity: 100%;
+}
 .cards-title{
     font-family: serif;
     font-size: 36px;
@@ -385,4 +411,38 @@ footer{
     font-size: 26px;
     font-weight: 700;
     padding-top: 20px;
+}
+.hidden-menu{
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    min-width: fit-content;
+    margin-top: 20px;
+    transition: opacity 200ms ease-in-out;
+}
+ 
+.hidden-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+.hidden-img{
+    display: contents;
+}
+.hidden-img>img{
+    padding-top: 50px;
+}
+.hidden-menu-container{
+    position: static;
+    opacity: inherit;
+    transition: opacity 300ms linear;
+}
+.menu:hover{
+    opacity: 100;
 }
