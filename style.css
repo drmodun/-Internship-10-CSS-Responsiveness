@@ -118,14 +118,14 @@ body{
     height: 1000px;
 }
 .container{
-    padding-top: 300px;
-    padding-right: 700px;
+    padding-top: 15vh;
+    padding-right: 20vw;
     display: flex;
     flex-wrap: wrap;
     top:0px;
     right: 0px;
     position: sticky;
-    width: 850px;
+    width: 40vw;
 }
 .hero-title{    	
     font-size: 30px;
@@ -289,7 +289,7 @@ footer{
     font-size: 50px;
     font-family: serif;
     font-weight: bolder;
-    max-width: 900px;
+    max-width: 40vw;
     display: flex;
     flex-wrap: wrap;
     color: #eaeaea;
@@ -307,18 +307,18 @@ footer{
     flex-direction: row;
 }
 .features-picture{
-    padding-right: 100px;
+    padding-right: 5vw;
     position: sticky;
     height: 1400px;
 }
 .features-picture > img{
     top: 140px;
-    transform: scale(0.75);
+    transform: scale(0.70);
     left: 0;
     position: sticky;
 }
 .features-text{
-    padding-top: 100px;
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     color: #eaeaea;
@@ -332,7 +332,7 @@ footer{
     font-size: 25px;
     font-family: sans-serif;
     font-weight: 700;
-    width: 500px;
+    width: 25vw;
     flex-wrap: wrap;
     padding-bottom: 50px;
 }
@@ -526,6 +526,27 @@ footer{
     .card{
         transform: scale(0.65);
     }
+    .features-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .features-picture{
+        position: relative;
+        top: unset;
+        transform: scale(0.7);
+        height: fit-content;
+    }
+    .features-desc{
+        width: 60vw;
+    }
+    .container1{
+        width: 1350px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
 }
 /*
 
