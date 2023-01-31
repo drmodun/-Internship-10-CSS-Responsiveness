@@ -386,11 +386,17 @@ footer{
 }
 .card-row{
     display: flex;
-    align-self: center;
     flex-direction: row;
     width: fit-content;
     overflow-x: hidden;
-    margin-left: 50%;
+    right: 30vw;
+}
+.row-section{
+    position: relative;
+    margin-left: 30vw;
+    display: flex;
+    width: 120vw;
+
 }
 .see-our-work{
     color: #0042ce;
@@ -579,6 +585,9 @@ footer{
     }
     .why-tiller{
         min-height: fit-content;
+    }
+    .footer > .logo{
+        padding-bottom: 30px;
     }
 
 }
