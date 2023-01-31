@@ -175,6 +175,7 @@ footer{
     height: 65px;
     font-size: 16px;
     font-weight: bolder;
+    display: flex; justify-content:center; align-items:center;
     margin-bottom: 30px;
     transition: color 300ms linear;
     transition:background-color 300ms linear;
@@ -183,6 +184,7 @@ footer{
     background-color:#0042ce;
     color: white;
     border-color: white;
+    cursor: pointer;
     
 }
 .social-row> img{
@@ -342,6 +344,16 @@ footer{
     font-weight: 700;
     font-size: 16px;
     margin-bottom: 100px;
+    transition: color 300ms linear;
+    transition: background-color 300ms linear;
+}
+.features-button:hover{
+    background-color: #eaeaea;
+    color:#0042ce;
+    border-top-color: #0042ce;
+    border: hidden;
+
+
 }
 .cards{
     width: 100%;
@@ -350,6 +362,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    overflow-x: scroll;
 }
 .cards-rows{
     display: flex;
@@ -359,18 +372,19 @@ footer{
     padding-top: 100px;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-right: 1600px;
 }
 .card-row{
     display: flex;
     align-self: center;
     flex-direction: row;
-    width: 2000px;
-    overflow-x: auto;
-    margin-left: 500px;
+    width: fit-content;
+    overflow-x: hidden;
+    margin-left: 2000px;
 }
 .see-our-work{
-    padding-left: 1100px;
     color: #0042ce;
     font-family: sans-serif;
     font-weight: 900;
@@ -393,6 +407,15 @@ footer{
     box-sizing:border-box;
     transition: border-top-color 300ms linear;
 }
+.triangle2{
+    height: 15px;
+    width: 15px;
+    border: 10px solid transparent;
+    border-top-color: inherit;
+    box-sizing:border-box;
+    transition: border-top-color 300ms linear;
+    transform: rotate(270deg);
+}
 .menu{
     display: flex;
     flex-direction: column;
@@ -400,11 +423,14 @@ footer{
     overflow-x: visible;
     opacity: 100%;
 }
+.upper-row{
+    margin-left: 1500px;
+}
 .cards-title{
     font-family: serif;
     font-size: 36px;
     font-weight: bold;
-    padding-left: 500px;
+    margin-right: 600px;
 }
 .card-title{
     font-family: sans-serif;
