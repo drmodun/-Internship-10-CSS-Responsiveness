@@ -226,6 +226,9 @@ footer{
     display: flex;
     height: 600px;
     width: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
     flex-direction: column;
 }
 .tiller-title{
@@ -266,20 +269,21 @@ footer{
 }
 .green-background{
     height: 500px;
+    width: 1250px;
     background-color: #89e6d9;
-    position: relative;
-    top: 100px;
-    left:1050px;  
+    position: absolute;
+    top: 130px; 
+    left: 0;
     display: flex;
     align-content: center;
     flex-wrap: wrap;
 }
 .why-tiller-container{
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: fit-content;
 }
 .features{
     display: flex;
@@ -494,6 +498,21 @@ footer{
     .cards{
         min-width: 1350px;
     }
+    .green-background{
+        width: 75%;
+        margin-left: 17vw;
+        height: 35vh;
+    }
+    .white-container{
+        width: 70%;
+        margin-left: 17vw;
+        height: 35vh;
+    }
+    .why-tiller-container{
+        padding-bottom: 200px;
+    }
+    
+
 }
 @media screen and (max-width: 900px){
     .logo-column{
@@ -545,6 +564,19 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+    .tiller-image>img{
+        display: none;
+    }
+    .green-background{
+        display: none;
+    }
+    .white-container{
+        min-height: fit-content;
+        min-width: fit-content;
+    }
+    .why-tiller{
+        min-height: fit-content;
     }
 
 }
