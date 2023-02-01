@@ -595,6 +595,10 @@ footer{
     .white-container{
         min-height: 50vh;
     }
+    .why-tiller{
+        margin-left: 65vw;
+        padding-bottom: 300px;
+    }
 }
 /*
 
